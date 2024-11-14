@@ -1,7 +1,7 @@
 <div class="max-w-5xl h-full md:grid md:grid-cols-2 md:gap-6 md:place-items-center mx-auto px-6 pt-24 pb-12">
   <div class="absolute top-1/2 -translate-y-1/2 md:static md:translate-y-0 z-10">
-    <h1 class="pb-6 text-4xl text-slate-300">Your Personal Astronomy Guide</h1>
-    <p> Dive into the fascinating world of astronomy through interactive lessons,
+    <h1 class="pb-6 text-2xl md:text-4xl text-slate-300">Your Personal Astronomy Guide</h1>
+    <p class="md:text-lg"> Dive into the fascinating world of astronomy through interactive lessons,
       games, tools and
       articles.</p>
     <button
@@ -9,8 +9,8 @@
   </div>
 
   <!-- Background -->
-  <div class="absolute md:static left-0 top-0 w-full h-full">
-    <div class="img-galaxy h-full w-full md:rounded-lg md:overflow-hidden"></div>
+  <div class="absolute md:static left-0 top-0 w-full h-3/4">
+    <div class="bg-image h-full w-full md:rounded-lg md:overflow-hidden" [ngStyle]="bgImgStyle()"></div>
     <app-stars-background />
   </div>
 </div>
