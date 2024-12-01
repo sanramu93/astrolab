@@ -1,20 +1,13 @@
-<header class="z-50 fixed w-full flex justify-between bg-slate-800 px-6 py-2">
-  <!-- Nav Button -->
-  <button class="text-slate-400 justify-self-end" (click)="onToggleNavOpen()">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round"   stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-
+<header class="z-50 fixed w-full flex justify-between bg-gradient-to-r from-zinc-800 bg-zinc-900 px-6 py-3">
   <!-- Logo -->
   <div class="flex items-center justify-center">
     <div class="flex items-center mx-auto">
-      <img src="/assets/logo/space-ship.svg" class="w-6" alt="Astrolab" />
+      <img src="/assets/logo/space-ship.svg" class="w-7" alt="Astrolab" />
       <h1 class="text-blue-300 text-2xl px-2">Astrolab</h1>
     </div>
   </div>
 
-  <!-- Search Button -->
+  <!-- Menu Button -->
   <button class="text-slate-400 justify-self-end" (click)="onToggleNavOpen()">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round"   stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -22,7 +15,7 @@
   </button>
 
   <!-- Hamburguer menu -->
-  <div #mobileMenu class="z-50 absolute top-0 left-0 w-lvw h-lvh bg-slate-800 opacity-90"
+  <div #mobileMenu class="z-50 absolute top-0 left-0 w-lvw h-lvh bg-zinc-800 opacity-90"
     [ngClass]="{'hidden': !isNavOpen()}" (click)="onToggleNavOpen()">
     <ul class="flex flex-col items-center justify-center h-full space-y-4 text-blue-200">
       <li><a href="#">Home</a></li>
