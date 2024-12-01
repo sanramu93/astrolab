@@ -3,11 +3,12 @@ import { Component, computed, HostListener, OnInit, signal } from '@angular/core
 
 import { NasaApiService } from '../../services/nasa-api.service';
 import { StarsBackgroundComponent } from '../ui/stars-background/stars-background.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [StarsBackgroundComponent, NgStyle],
+  imports: [StarsBackgroundComponent, NgStyle, RouterLink],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
